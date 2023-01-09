@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'reactstrap';
 import serviceData from '~/assets/data/serviceData';
-import './Services.scss';
 import { motion } from 'framer-motion';
+import './Services.scss';
 
 function Services() {
     return (
@@ -16,7 +16,7 @@ function Services() {
                                 style={{ backgroundColor: `${item.bg}` }}
                             >
                                 <span className="service-icon">
-                                    <i class={item.icon}></i>
+                                    <i className={item.icon}></i>
                                 </span>
                                 <div>
                                     <h3 className="service-title">{item.title}</h3>

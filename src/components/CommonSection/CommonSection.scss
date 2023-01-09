@@ -1,0 +1,26 @@
+.common-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.608)),
+    url('../../assets/images/laptop-03.png') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.common-section {
+  h1 {
+    color: var(--white-color);
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .common-section {
+    padding: 70px 0;
+
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+}
