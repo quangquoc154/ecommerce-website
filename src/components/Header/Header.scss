@@ -39,7 +39,7 @@
   margin-bottom: 0;
 }
 
-.nav-item {
+.user-nav-item {
   a {
     color: var(--primary-color);
     font-weight: 500;
@@ -77,10 +77,38 @@
       z-index: 10;
     }
   }
-  span img {
+
+  .profile img {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .profile {
+    position: relative;
+    z-index: 9;
+
+    .profile-actions {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100px;
+      z-index: 10;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--card-bg-01);
+      border-radius: 5px;
+      line-height: 30px;
+      display: none;
+      cursor: pointer;
+    }
+
+    .show-profile-actions {
+      display: block;
+    }
   }
 }
 

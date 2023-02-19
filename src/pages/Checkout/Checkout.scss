@@ -1,0 +1,27 @@
+.checkout-form {
+  .form-group input {
+    border: 1px solid var(--card-bg-02);
+  }
+}
+
+.checkout-cart {
+  padding: 20px;
+  border: 2px dashed var(--card-bg-02);
+  border-radius: 5px;
+
+  h6,
+  h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h6 {
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    border-top: 1px solid #dddddd41;
+    padding-top: 20px;
+  }
+}
