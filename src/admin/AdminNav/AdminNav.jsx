@@ -17,6 +17,23 @@ function AdminNav() {
               <div className="logo">
                 <h2>QQMart</h2>
               </div>
+
+              <div className="search-box">
+                <input type="text" placeholder="Search..." />
+                <span>
+                  <i className="ri-search-line"></i>
+                </span>
+              </div>
+
+              <div className="admin-nav-top-right">
+                <span>
+                  <i className="ri-notification-2-line"></i>
+                </span>
+                <span>
+                  <i className="ri-settings-2-line"></i>
+                </span>
+                <img src={currentUser ? currentUser.photoURL : user_icon} alt="" />
+              </div>
             </div>
           </Container>
         </div>
