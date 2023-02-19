@@ -1,0 +1,37 @@
+.form-field {
+  position: relative;
+}
+
+.form-input {
+  padding: 10px 20px;
+  border: 1px solid #cdcccc;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.25s ease;
+
+  &:focus {
+    border-color: var(--card-bg-02-focus) !important;
+  }
+
+  &:not(:placeholder-shown) + .form-label,
+  &:focus + .form-label {
+    top: 0;
+    left: 11px;
+    display: inline-block;
+    padding: 0 10px;
+    background-color: var(--white-color);
+    color: var(--card-bg-02-focus);
+    transition: 0.25s ease;
+  }
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 21px;
+  user-select: none;
+  margin: 0;
+  color: #999;
+  pointer-events: none;
+}
