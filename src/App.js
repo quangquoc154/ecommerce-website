@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 import Layout from '~/Layout/Layout';
+import ProtectedRoute from './routes/ProtectedRoute';
 
 function App() {
   return (
@@ -16,7 +17,13 @@ function App() {
                 path={route.path}
                 element={
                   <Layout>
-                    <Page />
+                    {route.protected ? (
+                      <ProtectedRoute>
+                        <Page />
+                      </ProtectedRoute>
+                    ) : (
+                      <Page />
+                    )}
                   </Layout>
                 }
               />

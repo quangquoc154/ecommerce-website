@@ -61,37 +61,37 @@
     font-weight: 600;
     margin-bottom: 30px;
   }
+}
 
-  .form-group {
-    margin-bottom: 30px;
+.form-group {
+  margin-bottom: 30px;
 
-    input,
-    textarea {
-      width: 100%;
-      border: 1px solid var(--primary-color);
-      border-radius: 5px;
-      padding: 8px 20px;
+  input,
+  textarea {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 20px;
 
-      &:focus {
-        outline: none;
-      }
-    }
-
-    span {
-      display: flex;
-      align-items: center;
-      column-gap: 5px;
-      color: var(--rating-color);
-      font-weight: 600;
-      cursor: pointer;
+    &:focus {
+      outline: none;
     }
   }
 
-  .rating-group {
+  span {
     display: flex;
     align-items: center;
-    column-gap: 3rem;
+    column-gap: 5px;
+    color: var(--rating-color);
+    font-weight: 600;
+    cursor: pointer;
   }
+}
+
+.rating-group {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
 }
 
 .recommended-title {
